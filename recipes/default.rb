@@ -10,7 +10,7 @@ case node[:platform]
 when "centos", "amazon"
 	params=node['java']['openjdk']
 	params['packages'].each{|name|
-		rpm_package name do
+		yum_package name do
 			action :install
 		end
 	}
