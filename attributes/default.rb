@@ -1,5 +1,5 @@
 case platform
-	when "centos", "amazon"
+	when "centos", "amazon", "redhat"
 		default['java']['oracle']['files'] = {
 				"jdk-8u25-linux-x64.rpm" => 'https://s3-ap-northeast-1.amazonaws.com/packages.karuru6225/rpm/jdk-8u25-linux-x64.rpm',
 			}
